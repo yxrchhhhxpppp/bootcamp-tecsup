@@ -1,3 +1,13 @@
+/*
 body {
-    background-color: green;
+   background-color: green; 
 }
+*/
+
+p {
+    color: blue;
+    background-color: chartreuse;
+    font-size: 20px;
+}
+
+/* TODO: Añadan un background a la etiqueta h1 y cambien su tamaño a 50px */
