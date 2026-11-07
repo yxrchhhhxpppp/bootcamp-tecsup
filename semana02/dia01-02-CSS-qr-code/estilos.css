@@ -1,0 +1,12 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+}
+
+main {
+    border: 1px solid red;
+
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+}
