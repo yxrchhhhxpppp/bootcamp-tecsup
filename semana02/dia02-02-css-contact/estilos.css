@@ -1,4 +1,6 @@
 body {
+    /* TODO: Añadan la fuente Karla desde Google Fonts */
+    
     background-color: hsl(148, 38%, 91%);
 
     display: flex; /* flexbox */
@@ -13,12 +15,43 @@ body {
 
     width: 400px;
     background-color: hsl(0, 0%, 100%);
+
+    padding: 32px;
+    border: 16px;
 }
 
 h1 {
-    border: 1px solid red;
-
     margin: 0;
     margin-bottom: 32px;
     color: hsl(187, 24%, 22%);
 }
+
+label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    display: flex;
+
+    margin-top: 8px;
+
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+
+    box-sizing: border-box;
+}
+
+.row {
+    /* border: 1px solid blue; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+input 
