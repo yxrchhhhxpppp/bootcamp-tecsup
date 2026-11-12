@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS teoría</title>
+    <style>
+        /* Pseudoclases */
+
+        button {
+            background-color: tomato;
+        }
+
+        button:hover {
+            background-color: seagreen;
+            cursor: pointer;
+        }
+        input:focus {
+            outline: 3px solid gold;
+        }
+
+        button:disabled {
+            background-color: lightgray;
+        }
+        input:checked {
+            background-color: lightpink;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Pseudoclases</h1>
+
+    <p>Pasa el cursor por el botón y haz clic en el campo.</p>
+    <input type="text" placeholder="Escribe aquí" />
+    <button>Enviar</button>
+    <button disabled>No disponible</button>
+    <input type="checkbox"> Apagado
 </body>
 </html>
