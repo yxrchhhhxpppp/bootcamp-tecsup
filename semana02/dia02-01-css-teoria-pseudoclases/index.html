@@ -25,6 +25,25 @@
         input:checked {
             background-color: lightpink;
         }
+
+        /* Pseudoelemento */
+
+        .tip::before {
+            content: "💡 ";
+        }
+
+        .obligatorio::after {
+            content: " *";
+            color: red;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+
+        ::selection {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -35,5 +54,13 @@
     <button>Enviar</button>
     <button disabled>No disponible</button>
     <input type="checkbox"> Apagado
+
+    <h1>Pseudoelementos</h1>
+
+    <p class="tip">Guarda tus archivos con frecuencia.</p>
+    <p class="obligatorio">Correo</p>
+
+    <input type="text" placeholder="¿Hola, como estas?">
+
 </body>
 </html>
