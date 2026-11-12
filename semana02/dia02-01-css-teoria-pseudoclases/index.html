@@ -75,6 +75,66 @@
         h1, h2, h3 {
             background-color: brown;
         }
+
+        /*Herencia */
+
+        article {
+            color: lightblue;
+            font-family: Arial;
+        }
+
+        body {
+            color: rgb(39 199 21);
+        }
+
+        a, button {
+            color: inherit;
+            font-family: inherit;
+        }
+
+        /* Cascada */
+
+        header {
+        color: green;
+        }
+
+        .texto {
+        color: red;
+        }
+
+        #cabecera {
+        color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        p {
+            color: blueviolet; /* Gana esta */
+        }
+
+        /* Unidades de medida */
+
+        /*
+            Absolutas: px, cm, in  -> Siempre miden lo mismo 
+
+            Relativas: em, rem, %, VW, vh (+ modernas y flexibles) -> siempre dependen de otra medida
+        */
+
+        h1 {
+            font-size: 2rem; /* 32px con el tamaño por defecto*/
+        }
+
+        .portada {
+        height: 100vh; /* Todo el alto de la ventana */
+        background-color: lightblue;
+        }
+
+        .caja {
+        width: 50%;
+        background-color: gold;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +163,20 @@
     
     <section>
         <p>Otro párrafo fuera de un section</p>
+        <a href="#">enlace a mi página</a>
     </section>
 
+    <h1>Cascada</h1>
+
+    <header id="cabecera" class="texto">¿De qué color soy?</header>
+
+    <p>¿Rojo o azul? Gana la regla escrita al final.</p>
+
+    <h1>Mido 2rem</h1>
+    <p>Yo mido 1rem: el tamaño por defecto del navegador.</p>
+
+    <section class="portada">
+        <div class="caja">Mido la mitad de mi padre</div>
+    </section>
 </body>
 </html>
