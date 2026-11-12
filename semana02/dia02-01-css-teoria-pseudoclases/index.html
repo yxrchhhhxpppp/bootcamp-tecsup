@@ -44,6 +44,24 @@
         ::selection {
             background-color: lightgray;
         }
+
+        /* Selectores combinados */
+
+        /* Selectores descendiente */
+
+        article p {
+            border: 1px solid red;
+        }
+
+        /* Selectores de hijo directo */
+
+        article > strong {
+            color: red;
+        }
+
+        p > strong {
+            color: lightgreen;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +79,18 @@
     <p class="obligatorio">Correo</p>
 
     <input type="text" placeholder="¿Hola, como estas?">
+
+    <h1>Selectores combinados</h1>
+
+    <article>
+        <h2>Bienvenido</h2>
+        <p>Mi párrafo</p>
+        <p>Segundo párrafo con <strong>texto importante</strong></p>
+    </article>
+    
+    <section>
+        <p>Otro párrafo fuera de un section</p>
+    </section>
 
 </body>
 </html>
