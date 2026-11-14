@@ -1,0 +1,38 @@
+/* TODO: Terminar el diseño con CSS de este ejercicio de social links */
+
+body {
+    background-color: hsl(0, 0%, 8%);
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.perfil {
+    width: 450px;
+    height: 750px;
+    background-color: hsl(0, 0%, 12%);
+    
+    padding: 40px;
+    border-radius: 12px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: yellowgreen;
+}
+
+p {
+    color: whitesmoke;
+}
