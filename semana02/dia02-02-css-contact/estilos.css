@@ -1,5 +1,6 @@
 body {
     /* TODO: Añadan la fuente Karla desde Google Fonts */
+    font-family: "Karla", sans-serif;
     
     background-color: hsl(148, 38%, 91%);
 
@@ -59,9 +60,11 @@ textarea {
 
 input[type=submit] {
     background-color: hsl(169, 82%, 27%);
-    color: hsl(0, 0, 100%);
+    color: white;
     width: 100%;
     border: none;
     border-radius: 8px;
     padding: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
 } 
