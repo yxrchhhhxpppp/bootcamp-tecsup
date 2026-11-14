@@ -3,7 +3,8 @@
 body {
     background-color: hsl(0, 0%, 8%);
 
-    text-align: center;
+    font-family: "Inter", sans-serif;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,17 +12,15 @@ body {
 }
 
 .perfil {
-    width: 450px;
-    height: 750px;
+    width: 350px;
     background-color: hsl(0, 0%, 12%);
     
-    padding: 40px;
-    border-radius: 12px;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
 }
 
 img {
-    width: 130px;
-    height: 130px;
     border-radius: 50%;
 }
 
@@ -35,4 +34,23 @@ h3 {
 
 p {
     color: whitesmoke;
+    margin: 48px 0';
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.enlaces a {
+    padding: 16px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces a:hover {
+  background-color: hsl(0, 0%, 30%);
 }
