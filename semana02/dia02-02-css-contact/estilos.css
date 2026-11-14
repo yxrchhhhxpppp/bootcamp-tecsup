@@ -12,14 +12,18 @@ body {
 }
 
 .contact-form {
-    border: 1px solid white;
+  /* border: 1px solid red; */
 
-    width: 400px;
-    background-color: hsl(0, 0%, 100%);
+  width: 400px;
+  background-color: white;
+  background-color: #fff;
+  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
 
-    padding: 32px;
-    border: 16px;
+  padding: 32px;
+  border-radius: 16px;
 }
+
 
 h1 {
     margin: 0;
@@ -67,4 +71,18 @@ input[type=submit] {
     padding: 16px;
     font-weight: 700;
     letter-spacing: 1px;
+
+    font-family: "Karla", sans-serif;
 } 
+
+/* TODO: Darle estilos al query type del formulario */
+
+.query-type {
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    display: flex;
+    gap: 4px;
+}
