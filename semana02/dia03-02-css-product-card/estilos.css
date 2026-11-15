@@ -1,3 +1,33 @@
 body {
-    background-color: yellow;
+    min-height: 100vh;  
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    color: hsl(228, 12%, 48%);
+    /* -- Falta las fuentes -- */
+}
+
+main { /* todo el contenido en dos columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* .img y .content */
+    width: 100%;
+    max-width: 600px;
+    min-height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden; /*---- Recorta todo lo que sobresale de tarjeta y redondea esquinas ----*/
+}
+
+/*-------- Columna 1: Imagen del perfume --------*/
+.photo {
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-------- Columna 2: El resto de contenido --------*/
+.cotent {
+    padding: 32px;
 }
