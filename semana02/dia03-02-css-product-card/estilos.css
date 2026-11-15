@@ -1,12 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;  
-    background-color: hsl(30, 38%, 92%);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
     color: hsl(228, 12%, 48%);
-    /* -- Falta las fuentes -- */
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
 }
 
 main { /* todo el contenido en dos columnas */
@@ -28,6 +34,68 @@ main { /* todo el contenido en dos columnas */
 }
 
 /*-------- Columna 2: El resto de contenido --------*/
-.cotent {
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     padding: 32px;
+}
+/*-------- Subtítulo de perfume --------*/
+h2 {
+    letter-spacing: 3px;
+    font-size: small;
+    font-weight: 500;
+}
+
+/*-------- Titulo principal --------*/
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: black;
+    font-size: 32px;
+}
+
+/*-------- Párrafo de texto --------*/
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Precios */
+span {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+s {
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+}
+
+/*-------- Botón de Add to cart --------*/ 
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: hsl(158, 36%, 37%);
+    color: white;  /*---- Color de fuente ----*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+button :hover {
+    background-color: hsl(158, 42%, 18%);
 }
