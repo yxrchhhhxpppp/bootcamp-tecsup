@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Posicionamiento </title>
+    <style>
+        .producto {
+            position: relative; /*---- La posición establece los limites (padre es body) ----*/ 
+            width: 220px;
+            height: 160px;
+            background-color: lightcoral;
+        }
+
+        .oferta {
+            position: absolute;  /*---- Siempre toma en cuenta el elemento padre, que es body, pero esta dentro de producto que es el relative, y se mueve dentro de este ----*/
+            top: 8px;
+            right: 8px;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="producto">
+        Zapatillas
+        <span class="oferta">-50%</span>
+    </div>
+</body>
+</html>
