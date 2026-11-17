@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Modelo de caja</title>
+    <style>
+        .box {
+            background-color: red;
+
+            width: 200px;
+            height: 50px;
+
+            margin: 16px 20px; /*---- Arriba y abajo, izquierda y derecha ----*/
+            margin: 16px 20px 30px; /*---- Arriba, izquierda y derecha, abajo ----*/
+            margin: 16px 20px 30px 40px; /*---- Arriba, derecha, abajo, izquierda ----*/
+            border: 5px solid green;
+            padding: 10px; /*---- Espacio interno ----*/
+            margin: 10px; /*---- Espacio externo ----*/
+
+            box-sizing: content-box; /*---- Por defecto, tamaño del navegador ----*/
+            box-sizing: border-box; /*----  ----*/
+        
+        }
+
+        .bloque {
+            background-color: lightcoral;
+            display: block; /* Valor por defecto */
+        }
+        .enlinea {
+            background-color: lightgreen;
+            display: inline;
+        }
+        .enlinea-bloque {
+            background-color: lightpink;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Esto es una caja</div>
+
+    <!-- Tipos de caja -->    
+     <div class="bloque">BLOQUE</div>
+     <div class="enlinea">ENLINEA</div>
+     <div class="enlinea">ENLINEA</div>
+     <div class="enlinea">ENLINEA</div>
+     <div class="enlinea-bloque">ENLINEA Y BLOQUE</div>
+     <div class="enlinea-bloque">ENLINEA Y BLOQUE</div>
+</body>
+</html>
