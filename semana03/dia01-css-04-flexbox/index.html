@@ -44,12 +44,27 @@
             text-align: center;
             padding: 5px;
         }
+
+        header {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+            
+        }
     </style>
 </head>
 <body>
   <!-- TODO: el logo y el menu se visulizaran horizontalmente usando space between y los enlaces dentro de nav tendran un gap de 10px -->
   <header>
-    <h1>HolaFlexbox</h1>
+    <h1>HolaFlex</h1>
     <nav class="menu">
       <a href="#inicio">Inicio</a>
       <a href="#cursos">Cursos</a>
