@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Fuentes</title>
+    <style>
+        @font-face {
+            font-family: "Mi Poppins";
+            src: url(fuentes/poppins-v24-latin-100.woff2) format("woff2");
+            font-weight: 100;
+            font-display: swap;  /*---- Muestra el texto mientras carga la fuente ----*/
+        }
+
+        @font-face {
+            font-family: "Mi Poppins";
+            src: url(fuentes/poppins-v24-latin-100.woff2) format("woff2");
+            font-weight: 900;
+            font-display: swap;  /*---- Muestra el texto mientras carga la fuente ----*/
+        }
+
+        body {
+            font-family: "Times New Roman"; /*---- Fuente por defecto en chrome ----*/
+            font-family: "Mi Poppins";
+        }
+        
+        .fuente-100 {
+            font-weight: 100;
+        }
+
+        .fuente-900 {
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Este texto usa la fuente Poppins - 100</p>
+    <p>Este texto usa la fuente Poppins . 900</p>
+    
+</body>
+</html>
