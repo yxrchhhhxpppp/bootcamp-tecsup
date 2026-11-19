@@ -46,10 +46,17 @@ h1 {
     display: none; /*--- Esta oculto ---*/
 }
 
+.wrapper {
+    /*width: 1440px;*/
+
+    width: min(100% - 42px, 1440px);  /*--- En una pantalla pequeña se adaptará a el 100% ---*/
+
+}
+
 /*--- HEADER SECTION ---*/
 
 .header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: flex;
     justify-content: space-between; /*--- Divide el espacio en ambos lados (extremos) ---*/
@@ -57,9 +64,53 @@ h1 {
 
     padding-top: 3rem; /*--- Espacio entre contenido y borde superior (por el "top") ---*/ /* 42px <> 3rem <> 3 * 14px */
 
-    margin: 0 1rem; /*--- Espaciado (el 0 es arriba y abajo, y el 1 es derecha e izquierda) ---*/
+    /*margin: 0 1rem; /*--- Espaciado (el 0 es arriba y abajo, y el 1 es derecha e izquierda) ---*/
+    margin: 0 auto; /* el auto es para izquierda y derecha*/
+    margin: 0 1rem;
 }
 
 .header__nav {
     /* TODO: termimar el css de esta navegación */
+    display: flex;
+    gap: 3rem; /* 42px <> 3rem <> 3 * 14px */ /*--- Definir espacio (o "canalón") entre las filas y las columnas ---*/
+    
+    font-family: "Raleway", sans-serif;
+}
+
+/* HERO SECTION */
+
+/* TODO: Terminar el css para la sección hero. Usar bien el nombrado de clases y usar la función min. */
+
+.hero {
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+}
+
+.hero__image {}
+
+.hero__tittle {
+    border: 1px solid yellow;
+    width: min(100% - 3rem, 720px);
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /*Por defecto*/
+    font-size: 2.5rem;
+
+    text-align: center;
+}
+
+.hero__text {
+    /* TODO: Terminar de aplicar los estilos al parrafo del hero*/
+    
+}
+
+.hero__button {
+
 }
