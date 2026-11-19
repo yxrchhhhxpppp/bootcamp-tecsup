@@ -1,6 +1,29 @@
+/* GENERALES */
+
+/*--- Selector universal (el "*" es el universal )---*/
+* {
+    /* border: 1px solid green; */
+    box-sizing: border-box; /*--- Los bordes automáticos para todos los navegadores por igual ---*/
+    margin: 0; /*--- Los márgenes en los navegadores varían y cambian tamaños, y este comando lo evita ---*/
+}
+
+html {
+    font-size: 14px;
+}
+
+/* font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif; */
+
 body {
-    background-color: black;
-    color: white; 
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%); 
+
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+   /* font-size: 2rem; */ /*--- Es lo mismo que decir 2rem <> 2 * 14px <> 28px ---*/
+   font-family: "Raleway", sans-serif;
 }
 
 .hidden {
