@@ -21,11 +21,45 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+img {
+    /*--- RWD (Responsive Web Design) forma de adaptar los dispositivos a páginas ---*/
+
+    max-width: 100%; /*--- Nunca sale del contenedor o se adapta al dispositivo y ancho ---*/
+
+    height: auto; /*--- Conserva la proporción de altura siempre ---*/
+}
+
 h1 {
    /* font-size: 2rem; */ /*--- Es lo mismo que decir 2rem <> 2 * 14px <> 28px ---*/
    font-family: "Raleway", sans-serif;
 }
 
+/* UTILES */
+
 .hidden {
     display: none; /*--- Esta oculto ---*/
+}
+
+/*--- HEADER SECTION ---*/
+
+.header {
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between; /*--- Divide el espacio en ambos lados (extremos) ---*/
+    align-items: center;
+
+    padding-top: 3rem; /*--- Espacio entre contenido y borde superior (por el "top") ---*/ /* 42px <> 3rem <> 3 * 14px */
+
+    margin: 0 1rem; /*--- Espaciado (el 0 es arriba y abajo, y el 1 es derecha e izquierda) ---*/
+}
+
+.header__nav {
+    /* TODO: termimar el css de esta navegación */
 }
