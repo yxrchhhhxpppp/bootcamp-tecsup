@@ -7,25 +7,26 @@
 </head>
   <link rel="stylesheet" href="styles.css">
 <body>
-  <header class="header">  /*--- Encabezado de la página ---*/
-    <img src="images/logo.svg" alt="Logo">
+  <header class="header">  <!-- Encabezado de página -->
+    <img class="header__logo" src="images/logo.svg" alt="Logo">
 
-    <nav>
-      <a href="">Features</a>
+    <nav class="header__nav">
+      <a href="" class="header__nav--active">Features</a>
       <a href="">Team</a>
       <a href="">Sign In</a>
     </nav>
   </header>
-    
+
   <main>
-    <section>
-      <img src="images/illustration-intro.png" alt="Illustration illustration-intro">
-      All your files in one secure location, accessible anywhere.
+    <section class="hero">
+      <img class="hero__image" src="images/illustration-intro.png" alt="Illustration illustration-intro">
       
-      Fylo stores all your most important files in one secure location. Access them wherever 
-      you need, share and collaborate with friends family, and co-workers.
       
-      Get Started
+      <h1 class="hero__tittle">All your files in one secure location, accessible anywhere.</h1>
+      
+      <p class="hero__text">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+        
+      <button class="hero__button">Get Started</button>
     </section>
     
     <section class="hidden">
