@@ -96,7 +96,7 @@ h1 {
 .hero__image {}
 
 .hero__tittle {
-    border: 1px solid yellow;
+    
     width: min(100% - 3rem, 720px);
 
     font-family: "Raleway", sans-serif;
@@ -108,9 +108,22 @@ h1 {
 
 .hero__text {
     /* TODO: Terminar de aplicar los estilos al parrafo del hero*/
-    
+    width: min(100% - 3rem, 720px);
+
+    font-size: 1.2rem;
+
+    text-align: center;
 }
 
 .hero__button {
+    font-weight: 700;
 
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem;
+    min-width: 220px;
+    color: hsl(0, 0%, 100%);
+    
+    background-color: hsl(176, 68%, 64%);
+    /*FALTA: agregar el degradado del botón*/
 }
