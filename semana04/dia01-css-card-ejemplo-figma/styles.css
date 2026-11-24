@@ -8,5 +8,7 @@ html {
 }
 
 body {
-    background-color: beige;
+    background-color: #F5F5F5;
+
+    font-family: "Inter", sans-serif;
 }
