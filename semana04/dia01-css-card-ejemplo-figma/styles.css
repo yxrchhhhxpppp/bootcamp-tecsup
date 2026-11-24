@@ -11,4 +11,58 @@ body {
     background-color: #F5F5F5;
 
     font-family: "Inter", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 600;  /*--- Semibold medida ---*/
+    font-size: 20px;
+    color: #182033;
+}
+
+p, span {
+    font-weight: 400; /*--- Regular valor ---*/
+    font-size: 14px;
+    color: #626B7D;
+    line-height: 20px;
+}
+
+img {
+    /*--- RWD para imágenes ---*/
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 24px; /*--- Espacios entre todos los bordes con el contenido, o expansion de bordes ---*/
+    
+    border-radius: 12px;  /*--- Redondear esquinas ---*/
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    gap: 8px;  /*--- Distancia de separación de ambos elementos ---*/
+}
+
+button {
+    border: none;
+    padding: 12px 20px;  /*--- Arriba y abajo, izquierda y derecha ---*/
+    background-color: #4F46E5;
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
 }
