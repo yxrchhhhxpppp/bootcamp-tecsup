@@ -1,0 +1,57 @@
+/* GENERALES */
+
+* {
+  /* Reseteador de estilos */  /*--- Aplica para todos los elementos de la página ---*/
+  box-sizing: border-box;
+  margin: 0; /*--- Para quitar todos los márgenes posibles en todos los navegadores (más común y muy necesario) ---*/
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 16px; /* Por defecto, no es necesario agregarlo pero lo añadimos como referencia, es una referencia a equivalencia de rem */
+}
+
+img {
+  /* RWD para imágenes */
+  max-width: 100%;
+  height: auto; /*--- Define la altura a automática (adaptable) ---*/
+}
+
+a {
+  text-decoration: none; /*--- Quitar subrayado ---*/
+  color: inherit; /*--- Obtiene el color de el elemento mas cercano que tenga la etiqueta color ---*/
+}
+
+/* px, %, VM, en, rem  (unidades de medida por css)(la rem es la más universal y más recomendada) */
+
+/* UTILS */
+
+.hidden {
+  display: none; /*--- Oculta los elementos para tener mas orden (es temporalmente) ---*/
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+
+  width: min(100%, 1440px); /*--- El minimo valor para que la web se adapte a todo tipo de dispositivos (el 100% para celulares o asi, y el 1440px es para una web en computadora o televisor) ---*/
+/*--- ---*/
+  margin: 0 auto; /*--- Es para arriba y abajo pero el automatico es para izquierda y derecha, y donde necesitemos lo ponemos aqui en auto para izquiera y derecha ---*/
+  
+  /*--- Esto tambien es valido: 
+  margin-left: auto;
+  margin-right: auto; ---*/
+}
+
+/* HEADER SECTION */
+
+.header { /*--- Ambos bloques juntos ---*/
+  display: flex;
+  justify-content: space-between; /*--- Espacio entre ambos separados ---*/
+
+  padding: 1.5rem 1rem; /*--- 1.5 = para arriba y abajo, 1 = para izquierda y derecha (como un espaciado) ---*/
+
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
