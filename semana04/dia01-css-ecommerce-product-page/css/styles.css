@@ -63,11 +63,25 @@ gap: 2rem; /*--- 16px * 2 = 32px <> 2 rem ---*/
 }
 
 .header__links {
-    display: flex;
-    gap: 1.5rem; /*--- Separación entre elementos ---*/
+    display: none;
+}
 
-    font-size: .9rem;
-    color: hsl(219, 9%, 45%);
+/*
+TAMAÑOS DE PANTALLA SUGERIDOS:
+
+576px  -> pantallas pequeñas (celulares)
+768px  -> pantallas pequeñas (tablets y celulares)
+992px  -> pantallas medianas (Desktop)
+1280px -> pantallas grandes (Desktops, TVs)
+*/
+
+@media (min-width: 992px) {
+    .header__links {
+        display: flex;
+        gap: 1.5rem; /*--- Separación entre elementos ---*/
+        font-size: .9rem;
+        color: hsl(219, 9%, 45%);
+    }  
 }
 
 .header__icons {
