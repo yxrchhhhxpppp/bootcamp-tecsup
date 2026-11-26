@@ -34,39 +34,54 @@
     <section class="gallery">
       <div class="gallery__cover">
         <img src="images/image-product-1.jpg" alt="">
-      </div class="gallery_slider">
+      </div>
+      <div class="gallery__slider">
         <div class="gallery__photo--active">
           <img src="images/image-product-1-thumbnail.jpg" alt="">
         </div>
         <div>
-          <img src="images/image-product-1-thumbnail.jpg" alt="">
+          <img src="images/image-product-2-thumbnail.jpg" alt="">
         </div>
         <div>
-          <img src="images/image-product-1-thumbnail.jpg" alt="">
+          <img src="images/image-product-3-thumbnail.jpg" alt="">
         </div>
         <div>
-          <img src="images/image-product-1-thumbnail.jpg" alt="">
+          <img src="images/image-product-4-thumbnail.jpg" alt="">
         </div>
-      <div>
-
       </div>
     </section>
     
-    <section>
-
-      Sneaker Company
+    <section class="product">
+      <h2>Sneaker Company</h2>
       
-      Fall Limited Edition Sneakers
+      <h1>Fall Limited Edition Sneakers</h1>
       
-      These low-profile sneakers are your perfect casual wear companion. Featuring a 
-      durable rubber outer sole, they’ll withstand everything the weather can offer.
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
       
-      $125.00
-      50%
-      $250.00
+      <div class="product__price">
+        <div class="product__price--wrapper">
+          <span class="product__amount">$125.00</span>
+          <span class="product__discount">50%</span>
+        </div>
+        <span class="product__price--before">$250.00</span>
+      </div>
       
-      0
-      Add to cart
+      <form class="cart">
+        <div class="cart__quantity">
+          <button>
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <input type="text" readonly value="1">
+          <button>
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+        </div>     
+        <button>
+          <img src="images/icon-cart.svg" alt="">
+          Add to cart
+        </button>
+      </form>
     </section>
   </section>
 </body>

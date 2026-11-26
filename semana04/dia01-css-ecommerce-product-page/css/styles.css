@@ -90,3 +90,54 @@ TAMAÑOS DE PANTALLA SUGERIDOS:
     gap: 2rem;
 }
 
+.product-detail {
+    /*border: 1px solid red;*/
+    
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+    padding: 4rem; /*--- Le da espacio a todo, bordes ---*/
+}
+
+.gallery {
+    /*border: 1px solid blue;*/
+    
+    display: flex;
+    flex-direction: column; /*--- Para uno debajo de otro, para evitar desorden y poner bien el gap o padding o lo demas ---*/
+    gap: 2rem;
+}
+
+.gallery__cover img {
+    border-radius: 1rem;
+}
+
+.gallery__slider {
+    display: flex;
+    gap: 1rem;
+}
+
+.gallery__slider div {
+    width: 90px;
+    height: 90px;
+    border-radius: 1rem;
+    /*border: 1px solid green;*/
+    overflow: hidden; /*--- Si la imagen no quiere estar dentro del elemento padre que era el borde circular, se aplica esto y regresa a el elemento designado de borde circular ---*/
+}
+
+.gallery__slider div:hover {
+    border: 3px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+.gallery__photo--active {
+    border: 3px solid hsl(26, 100%, 55%) !important;
+}
+
+.gallery__photo--active {
+    opacity: 0.5;
+}
+
+/*------ PRODUCT SECTION ------*/
+
+/* TODO: Terminar la sección de producto con css */
+
